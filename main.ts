@@ -5,6 +5,7 @@ import { dirname, join } from "node:path";
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 const entryPath = join(outDir, "entry.txt");
+// The program writes this one fixed sentence to entry.txt without changing a word of it.
 const text = "The agenda arrived two minutes before start, with one item on it: a link to this meeting.";
 
 try {
